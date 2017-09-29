@@ -4,8 +4,7 @@ function onReady() {
   const toDoList = document.getElementById('toDoList');
 
   addToDoForm.addEventListener('submit', (event) => {
-    event.preventDefalt();
-
+    event.preventDefault();
     let title = newToDoText.value;
     let newLi = document.createElement('li');
     let checkbox = document.createElement('input');
@@ -18,5 +17,5 @@ function onReady() {
 }
 
 window.onload = function() {
-  alert("The window has loaded!");
+  onReady();
 };
