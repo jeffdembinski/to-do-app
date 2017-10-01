@@ -21,6 +21,7 @@ function onReady() {
       var checkbox = document.createElement('input');
       var spanDelete = document.createElement('span');
       spanDelete.setAttribute("id", toDo.id);
+      spanDelete.setAttribute("class", "delete");
       spanDelete.innerHTML = "&nbsp;&#10007;&nbsp;";
       checkbox.type = "checkbox";
       newLi.innerHTML = toDo.title;
