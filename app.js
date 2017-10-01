@@ -30,6 +30,15 @@ function onReady() {
       spanDelete.onclick = function deleteItem(e) {
         var id = e.target.id;
         console.log("Delete an item: " + id);
+        for (var i = 0; i < toDos.length; i++) {
+          if (toDos[i].id == id) {
+            toDos.splice(i, 1);
+            break;
+          }
+        }
+        var li = e.target.parentElement;
+        var ul = document.getElementById("toDoList");
+        ul.removeChild(li);
       }
     });
   }

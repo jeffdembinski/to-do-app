@@ -1,0 +1,4 @@
+ul#toDoList li span.delete {
+    display: inline-block;
+    cursor: pointer;
+}
